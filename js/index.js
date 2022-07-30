@@ -66,8 +66,8 @@ while (agregar !="Si", agregar != "No") {
 for(key of carrito) {
     total = total + key
 }
-console.log(total)
+console.log(`El precio total de tu carrito es $${total}.00 incluyendo impuestos \nGracias por su compra`)
 
 
-alert("Gracias por su compra")
+alert(`El precio total de tu carrito es $${total}.00 incluyendo impuestos \nGracias por su compra`)
 

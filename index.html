@@ -4,60 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/b502045d41.js" crossorigin="anonymous"></script>
     <title>Carrito</title>
 </head>
 <body>
     <div class="cartPage">
-        <H1>Mi carrito</H1>
-    <section class="cartSection">
-        <div class="cartProducts">
-            <div class="cartItem">
-                <div class="thumbnailContainer">
-                    <a href="#"><img class="productThumbnail" src="assets/img/roll.png" alt=""></a>
-                </div>
-                <div class="productInfo">
-                    <h3 class="productTitle">Rollitos primavera</h3>
-                    <p class="productDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eaque, natus inventore doloremque at rem!</p>
-                </div>
-                <span class="verticalSeparator"></span>
-                <div class="productData">
-                    <p class="priceUnit">$50.00</p>
-                    <div class="units">
-                    <input class="qty" type="number" name="quantity" id="quantity">
+        <div class="cartCover">
+            <div class="section">
+                <H1 class="title">Mi carrito</H1>
+                <section class="cartSection">
+                    <div class="cartProducts">
+                        <div class="cartItem">
+                            <div class="thumbnailContainer">
+                                <a class="linkThumbnail" href="#"><img class="productThumbnail" src="assets/img/roll.png" alt=""></a>
+                            </div>
+                            <div class="dataProduct">
+                                <div class="productInfo">
+                                    <h3 class="productTitle">Rollitos primavera</h3>
+                                    <p class="productDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eaque, natus inventore doloremque at rem!</p>
+                                </div>
+                                <span class="verticalSeparator"></span>
+                                <div class="productData">
+                                    <p class="priceUnit">Precio: <span>$50.00</span></p>
+                                    <div class="units">
+                                    <input class="qty" type="number" name="quantity" id="quantity">
+                                    </div>
+                                    <p class="productSubtotal">Total: <span>$250.00</span></p>
+                                </div>
+                            </div>
+                            <a class="removeLink" href="#">
+                                <div class="removeItem">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <p class="productSubtotal">$250.00</p>
-                </div>
-                <div class="removeItem">
-                    <i class="fa-solid fa-trash-can"></i>
-                </div>
+                    <div class="cartTotal">
+                        <H2>Total del carrito</H2>
+                        <table>
+                            <tbody>
+                                <tr class="cartSubtotal">
+                                    <th>SubTotal</th>
+                                    <td><span class="priceAmount">$350.00</span></td>
+                                </tr>
+                                <tr class="orderTotal">
+                                    <th>Total</th>
+                                    <td>
+                                        <strong>$500.00</strong>
+                                        <small>(Incluye
+                                            <span>$50.00</span>
+                                            IVA)
+                                        </small>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="contentButton">
+                            <button class="cartButton" type="button">Finalizar compra</button>
+                        </div>
+                    </div>
+                </section>
             </div>
+
         </div>
-        <div class="cartTotal">
-            <H2>Total del carrito</H2>
-            <table>
-                <tbody>
-                    <tr class="cartSubtotal">
-                        <th>SubTotal</th>
-                        <td><span class="priceAmount">$350.00</span></td>
-                    </tr>
-                    <tr class="orderTotal">
-                        <th>Total</th>
-                        <td>
-                            <strong>$500.00</strong>
-                            <small>(Incluye
-                                <span>$50.00</span>
-                                IVA)
-                            </small>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <button type="button">Finalizar compra</button>
-        </div>
-    </section>
-</div>
+    </div>
+    <div class="vectorCover"></div>
+    
     <script defer src="js/index.js"></script>
 </body>
 </html>
